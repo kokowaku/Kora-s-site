@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./main.js"></script>
+  </head>
+
+  <body>
+    <!-- ✅ LOADER (page blanche + SVG + barre) -->
+    <div
+      class="site-loader"
+      id="siteLoader"
+      aria-hidden="false"
+      aria-label="Loading"
+    >
+      <div class="site-loader-inner" role="status" aria-live="polite">
+        <img
+          class="site-loader-logo"
+          src="Ref/Images/Persona/K-01 copie.svg"
+          alt=""
+          aria-hidden="true"
+        />
+
+        <div class="site-loader-bar" aria-hidden="true">
+          <span class="site-loader-bar-fill" id="loaderBar"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="page">
+      <div class="projects-scroll" aria-label="Projects horizontal scroller">
+        <div class="projects-grid" id="projectsGrid">
+          <div
+            class="project"
+            data-tags="books"
+            data-images="Ref/Images/Balade/JPEG/KorakotUnasit_IV_1.jpg|
+            Ref/Images/Balade/JPEG/KorakotUnasit_IV_2.jpg|
+            Ref/Images/Balade/JPEG/KorakotUnasit_IV_4.jpg|
+            Ref/Images/Balade/JPEG/KorakotUnasit_IV_6.jpg|
+            Ref/Images/Balade/JPEG/KorakotUnasit_IV_8.jpg|
+            Ref/Images/Balade/JPEG/KorakotUnasit_IV_10.jpg"
+            data-video="Ref/Images/Balade/UnasitKorakot_Séquence_Balade copie.mp4"
+            data-desc="Balade&#10;Book project&#10;2024"
+          >
+            <img
+              src="Ref/Images/Balade/JPEG/KorakotUnasit_IV_1.jpg"
+              alt="Balade"
+            />
+
+            <!-- ✅ Texte HTML par projet (tu peux tout changer) -->
+            <div class="project-text" hidden>
+              <h3>Balade</h3>
+
+              <p>
+                Ce projet consiste à créer une identité visuelle inspirée par
+                notre rue. Lors de mes balades, j’ai été marqué par la beauté du
+                panorama et la présence des montagnes, à la fois imposantes et
+                pleines de subtilités. Ces formes, ces lignes naturelles et ces
+                variations de couleurs deviennent une source d’inspiration
+                graphique.
+              </p>
+
+              <p class="meta">Format : 20,9 x 27,7cm</p>
+              <p class="meta">Technique : Illustrator/InDesign/After Effect</p>
+              <p class="meta">2024</p>
+              <!-- Exemple :
+              <ul>
+                <li>Format : A5</li>
+                <li>Impression : ...</li>
+              </ul>
+              -->
+            </div>
+          </div>
+
+          <div
+            class="project"
+            data-tags="books"
+            data-images="Ref/Images/Blank/Repro/IMG_3747.png|
+            Ref/Images/Blank/Repro/IMG_3755.png|
+            Ref/Images/Blank/Repro/IMG_3759_2.png|
+            Ref/Images/Blank/Repro/IMG_3765.png|
+            Ref/Images/Blank/Repro/IMG_3770.png"
+            data-desc="Blank&#10;Book project&#10;2024"
+          >
+            <img src="Ref/Images/Blank/Repro/IMG_3747.png" alt="Blank" />
+
+            <div class="project-text" hidden>
+              <h3>Blank</h3>
+
+              <p>
+                L’idée centrale de ce projet était le thème du « souvenir ».
+                Nous avons réalisé une dizaine de dessins, que nous avons
+                ensuite intégrés à une plateforme capable de générer des
+                illustrations reproduisant les traits caractéristiques du dessin
+                humain.
+              </p>
+
+              <p class="meta">Format : 13,3 x 18,3cm</p>
+              <p class="meta">
+                Technique : Illustrator/InDesign/Ai tool/Prompt
+              </p>
+              <p class="meta">2024</p>
+            </div>
+          </div>
+
+          <div
+            class="project"
+            data-tags="poster"
+            data-images="Ref/Images/Workshop_Blockweek/Film/Godz.png"
+            data-desc="Film&#10;Poster&#10;2024"
+          >
+            <img src="Ref/Images/Workshop_Blockweek/Film/Godz.png" alt="Film" />
+
+            <div class="project-text" hidden>
+              <h3>Film</h3>
+              <p>Hélas Studio - Poster</p>
+              <p>
+                Exercice autour du format de l’affiche à travers un axe
+                typographique. L’objectif est de communiquer l’ambiance d’un
+                film à travers un lettrage, en mettant graphiquement en scène le
+                texte.
+              </p>
+
+              <p>
+                Pour la conception du poster autour du film Godzilla Minus One,
+                je me suis inspiré des cris de la créature afin de jouer
+                typographiquement sur la forme et direction pour avoir cette
+                impression d’un cri venant d’une ligne directrice.
+              </p>
+
+              <p class="meta">Format : F4</p>
+              <p class="meta">2024</p>
+            </div>
+          </div>
+
+          <div
+            class="project"
+            data-tags="poster"
+            data-images="Ref/Images/Workshop_Blockweek/Balmer Hählen/PostersMockup_Yadom.png"
+            data-desc="Madeleine de Proust&#10;Poster&#10;2024"
+          >
+            <img
+              src="Ref/Images/Workshop_Blockweek/Balmer Hählen/PostersMockup_Yadom.png"
+              alt="Madeleine de Proust"
+            />
+
+            <div class="project-text" hidden>
+              <h3>Madeleine de Proust</h3>
+              <p>Balmer Hählen - Poster</p>
+
+              <p>
+                Conception d’une affiche autour de l’expression « Madeleine de
+                Proust ».
+              </p>
+
+              <p class="meta">Impression : Sérigraphie sur Jet d'encre</p>
+              <p class="meta">Format : F4</p>
+              <p class="meta">2025</p>
+            </div>
+          </div>
+
+          <div
+            class="project"
+            data-tags="motiondesign"
+            data-title="TypeMotion"
+            data-video="Ref/Images/Workshop_Blockweek/TypeMotion/Affiche_Clea_kora.mp4|
+            Ref/Images/Workshop_Blockweek/TypeMotion/Insta_Clea_Kora.mp4|
+            Ref/Images/Workshop_Blockweek/TypeMotion/Ambiance_Clea_Kora.mp4"
+            data-desc="TypeMotion&#10;Motion design&#10;2024"
+          >
+            <img
+              src="Ref/Images/Workshop_Blockweek/TypeMotion/TypeMo.png"
+              alt="TypeMotion"
+            />
+
+            <div class="project-text" hidden>
+              <h3>TypeMotion</h3>
+              <p>Motion design</p>
+
+              <p>
+                Semaine Bloc dédiée à la création visuelle pour le Workshop du
+                printemps 2025.
+              </p>
+
+              <p class="meta">En Collaboration avec : Clea Dunand</p>
+              <p class="meta">Technique : 3D/After Effects</p>
+              <p class="meta">2025</p>
+            </div>
+          </div>
+
+          <!-- ✅ TEST VIDEO -->
+          <div
+            class="project"
+            data-tags="video-sequence"
+            data-title="Nailart"
+            data-video="Ref/Images/Nailart/Unasit_Korakot_Teaser.mp4|Ref/Images/Nailart/Unasit_Korakot_Séquence.mp4"
+            data-desc="Nailart&#10;Video sequence&#10;2024"
+          >
+            <img src="Ref/Images/Nailart/Nailart_screen.png" alt="Demo video" />
+
+            <div class="project-text" hidden>
+              <h3>Nailart</h3>
+
+              <p>
+                Réalisation d’une séquence vidéo en collaboration avec une
+                créatrice de Nailart. Le projet explore la narration en image à
+                travers une DA inspiré de jeux vidéo.
+              </p>
+
+              <p class="meta">En Collaboration avec : be_u_nails_lausanne</p>
+              <p class="meta">Technique : Illustrator/3D/After Effects</p>
+              <p class="meta">2024</p>
+            </div>
+          </div>
+
+          <div
+            class="project"
+            data-tags="motiondesign"
+            data-title="Magie"
+            data-video="Ref/Images/Workshop_Blockweek/Magie/Well_Focused.mp4"
+            data-desc="Magie&#10;Motion design&#10;2024"
+          >
+            <img
+              src="Ref/Images/Workshop_Blockweek/Magie/WellFocused.png"
+              alt=""
+            />
+
+            <div class="project-text" hidden>
+              <h3>Magie</h3>
+
+              <p>
+                Ce projet avait pour objectif de créer une animation autour d’un
+                tour de magie. Nous avons donc choisi de mettre en scène des
+                Illusions de disparition et d’apparition, afin de capturer
+                l’effet de surprise et la vivacité propres à l’univers de
+                l’illusion.
+              </p>
+
+              <p class="meta">En Collaboration avec : Léa Verboux</p>
+              <p class="meta">Technique : Illustrator/After Effects</p>
+              <p class="meta">2024</p>
+            </div>
+          </div>
+
+          <div
+            class="project"
+            data-tags="video-sequence"
+            data-title="Psychémorphosis"
+            data-video="Ref/Images/Séquence Vr/Mapsy-Exportfinal.mp4"
+            data-desc="Psychémorphosis&#10;Video sequence&#10;2024"
+          >
+            <img src="Ref/Images/Séquence VR/MapsyImage.png" alt="" />
+
+            <div class="project-text" hidden>
+              <h3>Psychémorphosis</h3>
+
+              <p>
+                Dans le cadre de notre projet, nous étions trois à réaliser une
+                séquence vidéo sur le thème de la « Métamorphose », accompagnée
+                d’un dispositif permettant sa visualisation en VR.
+              </p>
+
+              <p class="meta">
+                En Collaboration avec : Alexandre Carruzzo & Shana Meinecke
+              </p>
+              <p class="meta">Technique : Illustrator/After Effects/UE/VR</p>
+              <p class="meta">2025</p>
+            </div>
+          </div>
+
+          <div
+            class="project"
+            data-tags="video-sequence"
+            data-title="Pavillon des ombres"
+            data-video="Ref/Images/GraphismeContexte/Pavilion_canopy.mp4"
+            data-desc="Pavillon des ombres&#10;Video sequence&#10;2024"
+          >
+            <img src="Ref/Images/GraphismeContexte/Pavillombre.png" alt="" />
+
+            <div class="project-text" hidden>
+              <h3>Pavillon des ombres</h3>
+
+              <p>
+                La canopy du Pavillon de l’EPFL a pour fonction première
+                d’offrir un abri du soleil. Cette vidéo s’attarde sur les ombres
+                crée par les moments constant de la lumière. À travers une
+                narration visuelle contemplative, ce projet propose de lire ces
+                ombres comme des fragments de temps, des dessins éphémères.
+                L’espace fonctionnel devient alors un espace symbolique où le
+                banal devient poétique.
+              </p>
+
+              <p class="meta">Technique : 3D/After Effects</p>
+              <p class="meta">2025</p>
+            </div>
+          </div>
+
+          <div
+            class="project"
+            data-tags="video-sequence"
+            data-title="À fleur de silence"
+            data-video="Ref/Images/A fleur de silence/À fleur de silence/Vidéo/Simulation_3D.mp4|
+            Ref/Images/A fleur de silence/À fleur de silence/Vidéo/AFleur_DeSilence.mp4"
+            data-desc="À fleur de silence&#10;Video sequence&#10;2024"
+          >
+            <img
+              src="Ref/Images/A fleur de silence/À fleur de silence/Images/AFleur.png"
+              alt=""
+            />
+
+            <div class="project-text" hidden>
+              <h3>À fleur de silence</h3>
+
+              <p>
+                Mon projet explore un dialogue non verbal avec les fleurs, où
+                formes, couleurs et mouvements deviennent le reflet d’émotions
+                intérieures. Je ne vise pas à refléter la réalité du végétal,
+                mais à dévoiler ce qu’il suggère de plus intime et sensible. À
+                travers la vidéo et l’image en mouvement, j’ai créé une
+                expérience immersive qui traduit les variations subtiles de la
+                nature en langage visuel et émotionnel.
+              </p>
+
+              <p>
+                L’objectif est d’inviter le spectateur à ressentir, plutôt qu’à
+                comprendre, la beauté fragile et profonde des fleurs.
+              </p>
+
+              <p class="meta">
+                Technique : Illustrator/After Effects/Espace Immersif
+              </p>
+              <p class="meta">2025</p>
+            </div>
+          </div>
+
+          <div
+            class="project"
+            data-tags="motiondesign"
+            data-title="Lausonic"
+            data-video="Ref/Images/Workshop_Blockweek/DIA_studio/Compo_Dia_workshop.mp4"
+            data-desc="Lausonic&#10;Motion design&#10;2024"
+          >
+            <img
+              src="Ref/Images/Workshop_Blockweek/DIA_studio/Lausonic.png"
+              alt=""
+            />
+
+            <div class="project-text" hidden>
+              <h3>Lausonic</h3>
+
+              <p>Dia Studio</p>
+
+              <p>
+                Conception d’une identité visuelle pour un festival fictif dans
+                le cadre d’un atelier créatif. Le but était d’expérimenter le
+                design graphique et le motion design pour élaborer un univers
+                visuel pour le festival.
+              </p>
+
+              <p class="meta">Technique : Illustrator/After Effects</p>
+              <p class="meta">2025</p>
+            </div>
+          </div>
+
+          <div
+            class="project"
+            data-tags="motiondesign"
+            data-title="Numérique Responsable"
+            data-video="Ref/Images/Workshop_Blockweek/Numérique Responsable/Korakot_Nyria_2.mp4|
+            Ref/Images/Workshop_Blockweek/Numérique Responsable/Korakot_Nyria_3.mp4|
+            Ref/Images/Workshop_Blockweek/Numérique Responsable/Mail éclair.mp4"
+            data-video-layout="triple-vertical"
+            data-desc="Numérique Responsable&#10;Motion design&#10;Triptyque vertical&#10;2024"
+          >
+            <img
+              src="Ref/Images/Workshop_Blockweek/Numérique Responsable/NR1.png"
+              alt="Triptyque vertical"
+            />
+
+            <div class="project-text" hidden>
+              <h3>Numérique Responsable</h3>
+
+              <p>
+                Conception et réalisation de trois affiches animées pour
+                sensibiliser au numérique responsable. L’objectif est d’explorer
+                les enjeux écologiques et sociaux liés aux technologies, tout en
+                proposant un visuel claire et impactante.
+              </p>
+
+              <p class="meta">En Collaboration avec : Nyria Graber</p>
+              <p class="meta">Technique : Illustrator/After Effects</p>
+              <p class="meta">2024</p>
+            </div>
+          </div>
+
+          <div
+            class="project"
+            data-tags="visualidentity"
+            data-title="Yi Peng"
+            data-images="Ref/Images/YiPeng/F4_v37.jpg"
+            data-video="Ref/Images/YiPeng/YiPeng_anime_2 copie.mp4|
+            Ref/Images/YiPeng/Horizontal_anime copie.mp4"
+            data-desc="Yi Peng&#10;Visual Identity&#10;Images + video&#10;2024"
+          >
+            <img src="Ref/Images/YiPeng/YiPeng_img.png" alt="" />
+
+            <div class="project-text" hidden>
+              <h3>Yi Peng</h3>
+
+              <p>
+                Conception d’une identité visuelle pour le festival des
+                lanternes Yi Peng, à Chiang Mai, dans le nord de la Thaïlande.
+                Le projet explore un lettrage multiscript (thaï et latin) afin
+                de créer un pont entre tradition et modernité. Cette approche
+                expérimentale s’inscrit dans l’esprit du festival, où la
+                typographie devient un terrain de recherche et de dialogue
+                culturel. Lors de Yi Peng, les lanternes s’élèvent dans le ciel
+                comme un geste symbolique : chasser la malchance et accueillir
+                la chance et l’espoir pour l’année à venir.
+              </p>
+
+              <p class="meta">
+                Technique : Illustrator/InDesign/Glyphs/After Effects
+              </p>
+              <p class="meta">2025</p>
+
+              <!-- Exemple :
+              <p><a href="#" target="_blank" rel="noopener">Lien</a></p>
+              -->
+            </div>
+          </div>
+
+          <div class="project" data-tags="books"></div>
+          <div class="project" data-tags="poster"></div>
+        </div>
+      </div>
+
+      <nav class="footer" aria-label="Project filters">
+        <a href="#" class="filter-link" data-filter="all" aria-current="page"
+          >All</a
+        >
+        <a href="#" class="filter-link" data-filter="books">Books</a>
+        <a href="#" class="filter-link" data-filter="poster">Poster</a>
+        <a href="#" class="filter-link" data-filter="motiondesign"
+          >MotionDesign</a
+        >
+        <a href="#" class="filter-link" data-filter="video-sequence"
+          >Video Sequence</a
+        >
+        <a href="#" class="filter-link" data-filter="visualidentity"
+          >Visual Identity</a
+        >
+
+        <span class="spacer"></span>
+
+        <button
+          type="button"
+          class="me-link"
+          aria-expanded="false"
+          aria-controls="mePage"
+        >
+          Me
+        </button>
+      </nav>
+
+      <section class="me-page" id="mePage" aria-hidden="true">
+        <button type="button" class="me-hit" aria-label="Close Me"></button>
+
+        <div class="me-inner">
+          <h1>Me</h1>
+
+          <img class="me-cv" src="Ref/CV/CV_2025 copie.jpg" alt="Mon CV" />
+        </div>
+      </section>
+
+      <div class="project-panel" id="projectPanel" aria-hidden="true">
+        <button
+          type="button"
+          class="project-panel-backdrop"
+          aria-label="Close project"
+          data-project-close
+        ></button>
+
+        <aside
+          class="project-panel-sheet"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Project details"
+        >
+          <div class="project-panel-header">
+            <h2 class="project-panel-title">Project</h2>
+
+            <button
+              type="button"
+              class="project-panel-close"
+              aria-label="Close project"
+              data-project-close
+            >
+              ×
+            </button>
+          </div>
+
+          <div class="project-panel-body">
+            <div class="project-panel-video"></div>
+            <div class="project-panel-gallery"></div>
+            <p class="project-panel-empty" hidden>Images coming soon.</p>
+
+            <!-- ✅ TEXTE (HTML injecté depuis .project-text) -->
+            <div class="project-panel-desc" hidden></div>
+
+            <p class="project-panel-tags"></p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>
